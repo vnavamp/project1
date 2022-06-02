@@ -3,7 +3,7 @@ pipeline {
       tools { 
         maven 'maven' 
         jdk 'java' 
-          docker {image 'tomcat'}
+          // docker {image 'tomcat'}
     }
     stages {
         stage('git') {
