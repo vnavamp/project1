@@ -10,5 +10,11 @@ pipeline {
                 git credentialsId: 'vnavamp', url: 'https://github.com/vnavamp/project1.git'
             }
         }
+        stage('build') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+            
     }
 }
