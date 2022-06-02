@@ -1,5 +1,5 @@
 FROM tomcat:8-jre8
 
-WORKDIR /var/lib/jenkins/workspace/assignment
+WORKDIR /var/lib/jenkins/workspace/hello
 
-COPY **/*.war /etc/tomcat/webapps
+COPY **/*.war /usr/local/tomcat/webapps
