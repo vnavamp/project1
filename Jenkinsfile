@@ -29,10 +29,5 @@ pipeline {
                    sh 'mvn package'
                }
          } 
-        stage('deploy') {
-            steps {
-                sh 'mvn tomcat7:deploy'
-            }
-        }
     }
 }
